@@ -1,4 +1,38 @@
-# Koenigsspiele
+# Royal Games Store
+
+🎮 **A Digital Game Store**
+
+---
+
+## 📖 Overview
+
+Royal Games Store is a web application designed to sell digital games, built using Angular, TypeScript, Node.js, and MySQL. Users can create profiles to manage their purchases and view their library of games.
+
+## ✨ Features
+
+- **User Authentication**: Users can log in or register for new accounts.
+- **Game Library**: Each user has a personalized profile where they can view all purchased games.
+- **Shopping Experience**: Users can browse available games and purchase them directly through the platform.
+- **Employee Management**: Employees can add new games and manage user accounts.
+
+## 🛠️ Technologies Used
+
+- **Frontend**: 
+  - Angular
+  - TypeScript
+- **Backend**: 
+  - Node.js
+- **Database**: 
+  - MySQL
+
+## 🚀 Getting Started
+
+To get started with the Royal Games Store project, follow these steps:
+
+### 📋 Prerequisites
+
+- Node.js installed on your machine.
+- MySQL database setup.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0-next.4.
 
