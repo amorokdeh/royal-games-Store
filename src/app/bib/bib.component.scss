@@ -1,0 +1,51 @@
+@import "../shop/shop.component.scss";
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    min-width: 320px;
+    overflow-x: hidden;
+    height: 80vh;
+    margin-top: 40px;
+  }
+  
+  .example-card {
+      max-width: 250px; /* Card Size */
+      position: relative; 
+      margin-left: 165px;
+      margin-top: 40px;
+      border-radius: 15px;
+      background-color: #2c3344;
+      color: #fff;
+      box-shadow: 0 8px 16px #dce1e1;
+    
+  }
+   
+    .example-header-image {
+      background-size: cover;
+  
+    }
+  
+    .mat-card-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .mat-button{
+      border: none;
+      color: black;
+      background-color:  #95979a;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .info-price {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  

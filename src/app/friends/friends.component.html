@@ -1,0 +1,44 @@
+<div *ngIf="loggedIn === 'false'" class="container-fluid page">
+  <div class="d-flex page__box p-3">Freunde</div>
+  <!-- <div class="page__content shadow p-3 position-relative"> -->
+    <body>
+      <div class="row">
+        <h4> Du musst einlogen, um deine Freunde zu sehen.</h4>
+
+      </div>
+    </body>
+  
+  </div>
+
+
+<div *ngIf="loggedIn === 'true'" class="container-fluid page">
+  <div class="d-flex page__box p-3">Freunde</div>
+  <body>
+    <mat-toolbar>
+      <span>Nach Freunde suchen</span>
+      <input matInput [(ngModel)]="searchUser" placeholder="Benutzername">
+      <button (click)="addFriend(searchUser)" mat-button>
+        <span>Hinzufügen</span>
+      </button>
+    </mat-toolbar>
+    <div style="display:flex; flex-direction: row; justify-content: space-around;">
+      <mat-card class="example-card">
+        <mat-card-header>
+
+          <mat-card-title>Freunde Liste</mat-card-title>
+
+        </mat-card-header>
+
+        <mat-chip-list aria-label="Freunde">
+          <mat-chip *ngFor="let friend of friends">
+            <img matChipAvatar src="./assets/user.png" alt="Photo of a friend" />
+            {{friend.name}}
+          </mat-chip>
+
+        </mat-chip-list>
+        <mat-card-actions></mat-card-actions>
+      </mat-card>
+
+
+    </div>
+  </body>

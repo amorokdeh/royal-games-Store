@@ -1,0 +1,63 @@
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+button {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+.user {
+  font-size: 14px;
+}
+mat-toolbar {
+  background: #f7f7f7;
+}
+.user-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  &-icon {
+    height: 18px;
+    font-size: 16px;
+  }
+}
+
+::ng-deep {
+  .mat-menu-content {
+    width: 160px;
+  }
+}
+
+a {
+  color: #2c3344;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+.color-icon {
+  color: #2c3344;
+}
+/* Note: If you're using an SVG icon, you should make the class target the `<svg>` element */
+.color-icon svg {
+  fill: #2c3344;
+}
+
+h1 {
+  color: #2c3344;
+}
+
+h5 {
+  margin-top: 10px;
+  color: #2c3344;
+  margin-left: 10px;
+}

@@ -1,0 +1,84 @@
+
+  .page {
+    color: white;
+    padding: 0 1rem;
+    background: #f1f5f9;
+  
+    &__box {
+      min-height: 120px;
+      background: #1e293b;
+      margin: 0 -1rem;
+      font-size: 36px;
+    }
+  }
+
+  mat-toolbar {
+    justify-content: space-between;
+    background-color: #babdc3;
+    min-width: 250px;
+    position: center;
+  }
+
+  .mat-button{
+    color: black;
+    background-color:  #95979a;
+  }
+
+  .header-text {
+    margin-top: 50px;
+    text-align: center;
+    position: center;
+    font-size: 600px;
+    min-width: 250px;
+  }
+
+  .assortiment-text {
+    margin-top: 50px;
+    text-align: center;
+    position: center;
+    font-size: 600px;
+    min-width: 250px;
+  }
+
+  
+.example-card {
+  max-width: 250px; /* Card Size */
+  position: relative; 
+  margin-left: 165px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  background-color: #2c3344;
+  color: #fff;
+  box-shadow: 0 8px 16px #dce1e1;
+
+}
+
+.example-header-image {
+  background-size: cover;
+
+}
+
+.mat-card-title {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.mat-button{
+  border: none;
+  color: black;
+  background-color:  #95979a;
+  justify-content: center;
+}
+
+.info-price {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 18px;
+}

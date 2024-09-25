@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+          <div class="card">
+              <div class="text-center">
+                  <h1>
+                    Registieren
+                  </h1>
+              </div>
+              <form>
+                  <form [formGroup]="registrationForm" (ngSubmit)="register(registrationForm.value)">
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" name="name" placeholder="Name" class="form-control" id="exampleInputPassword1" formControlName="name" required>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="Benutzername" class="form-label">Benutzername</label>
+                          <input type="text" name="Benutzername" placeholder="Benutzername" class="form-control" id="exampleInputPassword1" formControlName="username" required>
+                        </div>
+
+                      <div class="mb-3">
+                        <label for="adresse" class="form-label">Adresse</label>
+                        <input type="text" name="adresse" placeholder="Adresse" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="address" required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" placeholder="Email" class="form-control" id="exampleInputPassword1" formControlName="email" required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="passwort" class="form-label">Passwort</label>
+                        <input type="password" name="passwort" placeholder="Passwort" class="form-control" id="exampleInputPassword1" formControlName="passwort" required>
+                      </div>
+                      <button type="submit" class="btn btn-primary mb-2" routerLink="/loginAfterReg">Registrieren</button> 
+                    </form>
+                    <a style="color: #fff; margin-top:10px" routerLink="../login">Bereits registriert? Anmelden!</a>
+              </form>
+
+          

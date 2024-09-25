@@ -1,0 +1,35 @@
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3">Shop</div>
+      <body>
+        <mat-toolbar>
+          <span>Nach Spiele suchen</span>
+          <input matInput [(ngModel)]="searchedGame">
+          <button (click)="newMessage(searchedGame)"  routerLink="/gameInfo" mat-button>
+            <span >Suchen</span>
+          </button>
+        </mat-toolbar>
+        <app-carousel [images]="images"
+        [autoSlide]="true"
+        ></app-carousel>
+        <div class="row">
+            <mat-card class="example-card" *ngFor="let spiel of spiele">
+                <mat-card-header>
+                  <div class="example-header-image"></div>
+                  <mat-card-title>{{spiel.name}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="../../assets/{{spiel.name}}.jpg">
+                <div class="info-price">
+                  <div class="price">{{spiel.preis}}€</div>
+                  <button mat-button (click)="newMessage( spiel.name)" routerLink="/gameInfo">Info</button>
+                  <button mat-button [disabled]="loggedIn === 'false'" (click)="addSpiel(spiel.spielID)">
+                    <span> Kaufen </span>
+                  </button>
+                  </div>
+                <mat-card-actions>
+                </mat-card-actions>
+              </mat-card>
+
+    
+    </div>
+    </body>
+    </div>

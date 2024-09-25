@@ -1,0 +1,37 @@
+@import "../shop/shop.component.scss";
+
+.page {
+    color: white;
+    padding: 0 1rem;
+    background: #f1f5f9;
+  
+    &__box {
+      min-height: 120px;
+      background: #1e293b;
+      margin: 0 -1rem;
+      font-size: 36px;
+    }
+  }
+
+.mat-card{
+    max-width: 800px; /* Card Size */
+    position: relative; 
+    border-radius: 15px;
+    background-color: #2c3344;
+    color: #fff;
+    box-shadow: 0 8px 16px #dce1e1;
+  
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 15%;
+    margin-top: 50px;
+}
+
+.mat-card-content {
+    margin-left: 15px;
+    margin-top: 50px;
+    text-align: left;
+    text-decoration: #fff;
+    color: #fff;
+}

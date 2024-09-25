@@ -1,0 +1,39 @@
+<div *ngIf="loggedIn === 'false'" class="container-fluid page">
+  <div class="d-flex page__box p-3">Bibliothek</div>
+    <body>
+      <div class="row">
+        <h4> Du musst einlogen, um deine Bibliothek zu sehen.</h4>
+
+      </div>
+    </body>
+  
+  </div>
+
+
+<div *ngIf="loggedIn === 'true'" class="container-fluid page">
+  <div class="d-flex page__box p-3">Bibliothek</div>
+
+    <body>
+
+      <div *ngIf="spiele?.length == 0" class="row">
+        <h4> Deine Bibliothek ist leer.</h4>
+      </div>
+
+      <div *ngIf="spiele?.length > 0" class="row">
+          <mat-card class="example-card" *ngFor="let spiel of spiele">
+              <mat-card-header>
+                <div class="example-header-image"></div>
+                <mat-card-title>{{spiel.name}}</mat-card-title>
+              </mat-card-header>
+              <img mat-card-image img src="../../assets/{{spiel.name}}.jpg">
+                <button mat-button>
+                  <span> Spielen </span>
+                </button>
+              <mat-card-actions>
+              </mat-card-actions>
+            </mat-card>
+  
+  </div>
+  </body>
+      
+</div>

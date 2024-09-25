@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+          <div class="card">
+              <div class="text-center">
+                  <h1>
+                      Anmelden
+                  </h1>
+
+              </div>
+              <form>
+                  <form [formGroup]="loginForm" (ngSubmit)="getUser(loginForm.value)">
+                      <div class="mb-3">
+
+                        <label for="Benutzername" class="form-label">Benutzername</label>
+                        <input type="text" name="username" placeholder="Benutzername" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="username" required>
+                        
+                      </div>
+                      <div class="mb-3">
+                        <label for="password" class="form-label">Passwort</label>
+                        <input type="password" name="password" placeholder="Passwort" class="form-control" id="exampleInputPassword1" formControlName="passwort" required>
+                      </div>
+                      <button type="submit" class="btn btn-primary" routerLink="/shop">Anmelden</button>
+                    </form>
+              </form>
+              <a style="color: #fff; margin-top:10px" routerLink="../registieren">Neu hier? Registieren!</a>
+
+          </div>
+
+      </div>
+
+  </div>
+
+</div>

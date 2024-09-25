@@ -1,0 +1,59 @@
+
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3">Über Spiel</div>
+
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" *ngIf="spiele">
+        <mat-card>
+          <div class="col-auto d-none d-lg-block">
+            <img src="../../assets/{{spiele.name}}.jpg" width="100%" height="100%">
+            </div>
+            <mat-card-content>
+            <div class="mb-1">
+              <table style="width:100%" >
+                <tr>
+                  <th>Name</th>
+                  <th>ID</th>
+                  <th>Datum</th>
+                  <th>Preis</th>
+                  <th>Beschreibung</th>
+                </tr>
+                <tr>
+                  <td>{{spiele.name}}</td>
+                  <td>{{spiele.spielID}}</td>
+                  <td>{{spiele.erschDat}}</td>
+                  <td>{{spiele.preis}}</td>
+                  <td>{{spiele.beschreibung}} <td>
+                </tr>
+
+              </table>
+
+            
+            </div>
+          </mat-card-content>
+          <table>
+            <tr>
+
+          </tr>
+          <tr>
+            <td>
+             
+            </td>
+          </tr>
+          </table>
+          
+        </mat-card>
+        
+      </div>
+      <div *ngIf="!spiele">
+          <body>
+            <div class="row">
+              <h1> Kein Spiel gefunden.</h1>
+            </div>
+          </body>
+  
+          </div>
+    </div>
+
+
+
+    
